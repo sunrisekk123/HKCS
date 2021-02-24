@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Profile</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style type="text/css">
+
+        body{
+            font-family: sans-serif Black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 650px;
+            display: flex;
+        }
+        #contact{
+            border-radius: 5px;
+            color: white;
+            background: #117a8b;
+            padding: 10px;
+            opacity: 0.9;
+            box-shadow: 2px 2px 2px 2px #000;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            margin: 70px;
+
+
+        }
+        #btnClear,#btnSubmit{
+            box-shadow: 2px 2px 2px gray;
+            transition: 0.15s;
+            outline: none;
+            border: 2px solid #7abaff;
+            border-radius: 20px;
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background: none;
+            font-family: Verdana;
+        }
+        #btnSubmit:hover{
+            background: linear-gradient(to left,#062c33, #0056b3);
+            color: white;
+        }
+        #btnClear:hover{
+            background: linear-gradient(to left,#491217, #c82333);
+            border: 2px solid #491217;
+            color: white;
+        }
+        #btnDelAC{
+            transition: 0.15s;
+            outline: none;
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background: #6c757d;
+            color: #000000;
+            font-family: Verdana;
+        }
+        #btnDelAC:hover{
+            background: #1b1e21;
+            color: white;
+        }
+        #img{
+            margin-left: 10px;
+
+        }
+        #icon{
+            position: relative;
+            top: 60%;
+            left: 40%;
+
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+<div id="contact" >
+<form id="updateCustomer" action="" method="post" class="dataGroup" >
+    <h1>Update profile</h1>
+    <img src="Image/icon.png" width="70" height="70" alt="icon" id="icon">
+    <div class="form-row " >
+        <label for="img">Select image:  </label>
+        <input type="file" id="img" name="img" accept="image/*">
+    </div>
+    <div class="form-row" >
+        <div class="form-group col-lg-6 col-md-6" >
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" required>
+        </div>
+        <div class="form-group col-lg-6 col-md-6" >
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" required>
+        </div>
+    </div>
+    <div class="form-group ">
+        <label for="phoneNo">Phone number</label>
+        <input type="text" class="form-control" id="phoneNo" placeholder="Phone number" pattern="^[0-9]{8}$" required>
+    </div>
+    <div class="form-group ">
+        <label for="passw">Password</label>
+        <input type="password" class="form-control" id="passw" placeholder="Password" required>
+    </div>
+    <div class="form-group">
+        <label for="passwC">Confirm Password</label>
+        <input type="password" class="form-control" id="passwC" placeholder="Confirm Password" required>
+    </div>
+
+    <div class="form-row ">
+        <input type="submit" name="submit" value="Update" id= "btnSubmit" class="btnSubmit btn-lg" >
+        <input type="reset" name="cancel" value="Clear" id= "btnClear" class="btnClear btn-lg" >
+    </div>
+    <p>
+    <div class="form-group">
+    <input type="button" name="delete" value="Delete Account" id= "btnDelAC" class="btnDelAC btn-lg" >
+    </div>
+    </p>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <title>Register</title>
+<style type="text/css">
+
+body{
+        font-family: sans-serif Black;
+    }
+#contact{
+         border-radius: 5px;
+        color: white;
+        background: linear-gradient(to left,#17a2b8, #20c997) ;
+        padding: 10px;
+        opacity: 0.9;
+        box-shadow: 2px 2px 2px 2px #000;
+        animation-delay: 2s;
+        animation-duration: 2s;
+        margin: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    display: flex;
+}
+#btnClear{
+    box-shadow: 2px 2px 2px gray;
+    transition: 0.15s;
+    outline: none;
+    border: 2px solid #c82333;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    font-family: Verdana;
+}
+#btnSubmit{
+    box-shadow: 2px 2px 2px gray;
+    transition: 0.15s;
+    outline: none;
+    border: 2px solid #7abaff;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    font-family: Verdana;
+}
+    #btnSubmit:hover{
+        background: linear-gradient(to left,#062c33, #0056b3);
+        color: white;
+    }
+#btnClear:hover{
+    background: linear-gradient(to left,#491217, #c82333);
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+    <div id="contact" >
+    <form id="registerC" action="registerC.php" method="post" class="dataGroup">
+        <h1 class="text-center">Register</h1>
+        
+        <div class="form-row">
+            <div class="form-group col-lg-6 col-md-6">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required>
+            </div>
+            <div class="form-group col-lg-6 col-md-6">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-lg-6 col-md-6">
+                <label for="emailAdd">Email</label>
+                <input type="text" class="form-control" name="emailAdd" id="emailAdd" placeholder="Email address" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9]+)\.([A-Za-z]{2,5})$" required>
+            </div>
+            <div class="form-group col-lg-6 col-md-6">
+                <label for="phoneNo">Phone number</label>
+                <input type="text" class="form-control" name="phoneNo" id="phoneNo" placeholder="Phone number" pattern="^[0-9]{8}$" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="passw">Password</label>
+            <input type="password" class="form-control" name="passw" id="passw" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <label for="passwC">Confirm Password</label>
+            <input type="password" class="form-control" name="passwC" id="passwC" placeholder="Confirm Password" required>
+        </div>
+
+
+        <div class="checkbox">
+            <label><input type="checkbox" name="checkbox" value="agree"> I agree to the terms & condition</label>
+        </div>
+        <div class="form-row">
+        <input type="submit" name="submit" value="Register" id= "btnSubmit" class="btnSubmit btn-lg" >
+        <input type="reset" name="cancel" value="Clear" id= "btnClear" class="btnClear btn-lg" >
+        </div>
+    </form>
+
+</div>
+
+</body>
+
+</html>

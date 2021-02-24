@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HKCS Frontpage</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="top-nav-bar">
+    <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+        <img src="Image/cubeShopLogo.png" class="logo">
+        <input type="text" class="form-control">
+        <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="shoppingCart.php"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+            <li><a href="loginHomeC.html">My Account</a></li>
+            <li><a href="logout.php">Log Out</a></li>
+        </ul>
+    </div>
+</div>
+<!--
+<section class="header">
+  <div class="side-menu" id="side-menu">
+    <ul>
+      <li>On Sale <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-1</li>
+        <li>Sub Menu-1</li>
+        <li>Sub Menu-1</li>
+        <li>Sub Menu-1</li>
+        </ul>
+      </li>
+
+      <li>Mobiles <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-2</li>
+        <li>Sub Menu-2</li>
+        <li>Sub Menu-2</li>
+        <li>Sub Menu-2</li>
+        </ul>
+      </li>
+
+      <li>Computers <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-3</li>
+        <li>Sub Menu-3</li>
+        <li>Sub Menu-3</li>
+        <li>Sub Menu-3</li>
+        </ul>
+      </li>
+
+      <li>Books <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-4</li>
+        <li>Sub Menu-4</li>
+        <li>Sub Menu-4</li>
+        <li>Sub Menu-4</li>
+        </ul>
+      </li>
+
+      <li>Fitness <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-5</li>
+        <li>Sub Menu-5</li>
+        <li>Sub Menu-5</li>
+        <li>Sub Menu-5</li>
+        </ul>
+      </li>
+
+      <li>Baby Care <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-6</li>
+        <li>Sub Menu-6</li>
+        <li>Sub Menu-6</li>
+        <li>Sub Menu-6</li>
+        </ul>
+      </li>
+
+      <li>Computers<i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-7</li>
+        <li>Sub Menu-7</li>
+        <li>Sub Menu-7</li>
+        <li>Sub Menu-7</li>
+        </ul>
+      </li>
+
+      <li>Auto Accessories <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-8</li>
+        <li>Sub Menu-8</li>
+        <li>Sub Menu-8</li>
+        <li>Sub Menu-8</li>
+        </ul>
+      </li>
+
+      <li>Movies and Music <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-9</li>
+        <li>Sub Menu-9</li>
+        <li>Sub Menu-9</li>
+        <li>Sub Menu-9</li>
+        </ul>
+      </li>
+
+      <li>Video and Games <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-10</li>
+        <li>Sub Menu-10</li>
+        <li>Sub Menu-10</li>
+        <li>Sub Menu-10</li>
+        </ul>
+      </li>
+
+      <li>Home and kitchen <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-11</li>
+        <li>Sub Menu-11</li>
+        <li>Sub Menu-11</li>
+        <li>Sub Menu-11</li>
+        </ul>
+      </li>
+
+      <li>Furniture <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-12</li>
+        <li>Sub Menu-12</li>
+        <li>Sub Menu-12</li>
+        <li>Sub Menu-12</li>
+        </ul>
+      </li>
+
+      <li>Grocery <i class="fa fa-angle-right"></i>
+        <ul>
+        <li>Sub Menu-13</li>
+        <li>Sub Menu-13</li>
+        <li>Sub Menu-13</li>
+        <li>Sub Menu-13</li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</section>
+-->
+<div class="vl col-lg-3 col-md-3" ></div>
+<section class="gallery-block cards-gallery">
+    <div class="container-fluid">
+        <div>
+            <div style="text-align: center;"><h2>Product</h2></div>
+        </div>
+        <hr>
+        <div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shop
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Mong Kok</a>
+                    <a class="dropdown-item" href="#">Tsuen Wan</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/waterBottle.jpg" alt="img1" class="card-img-top" width="90%" height="90%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">Water Bottle</a> </h6>
+                            <p>HKD$120.0</p>
+                            <button type="button" id="addToSC1" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/bracelet.jpg" alt="img1" class="card-img-top" width="90%" height="90%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">Bracelet</a> </h6>
+                            <p>HKD$500.0</p>
+                            <button type="button" id="addToSC2" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/earRing.jpg" alt="img1" class="card-img-top" width="100%" height="100%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">Ear Rings</a> </h6>
+                            <p>HKD$300.0</p>
+                            <button type="button" id="addToSC3" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/earRing2.jpg" alt="img1" class="card-img-top" width="100%" height="100%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">Ear Rings</a> </h6>
+                            <p>HKD$100.0</p>
+                            <button type="button" id="addToSC4" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/gamePlay1.jpg" alt="img1" class="card-img-top" width="90%" height="90%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">PS4 Assassin's Creed III(Remastered)</a> </h6>
+                            <p>HKD$120.0</p>
+                            <button type="button" id="addToSC5" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/gamePlay2.jpg" alt="img1" class="card-img-top" width="90%" height="90%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">PS4 Assassin's Creed Odyssey</a> </h6>
+                            <p>HKD$100.0</p>
+                            <button type="button" id="addToSC6" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/gamPlay3.jpg" alt="img1" class="card-img-top" width="100%" height="100%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">PS4 The Division2</a> </h6>
+                            <p>HKD$100.0</p>
+                            <button type="button" id="addToSC7" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class ="lightbox" >
+                            <img src="Image/card.png" alt="img1" class="card-img-top" width="100%" height="100%">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">Card</a> </h6>
+                            <p>HKD$20.0</p>
+                            <button type="button" id="addToSC8" class="btn btn-warning"><i class="fa fa-shopping-cart" aria-hidden="true">Add to Shopping Cart</i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<ul class="pagination" id="pageNum" style="margin-left: 40%; position: static;">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item "><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+<script>
+    function openmenu()
+    {
+        document.getElementById("side-menu").style.display="block";
+        document.getElementById("menu-btn").style.display="none";
+        document.getElementById("close-btn").style.display="block";
+    }
+    function closemenu()
+    {
+        document.getElementById("side-menu").style.display="none";
+        document.getElementById("menu-btn").style.display="block";
+        document.getElementById("close-btn").style.display="none";
+    }
+</script>
+</body>
+
+</html>

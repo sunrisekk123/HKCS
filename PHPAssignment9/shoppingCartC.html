@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="top-nav-bar">
+    <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+        <img src="Image/cubeShopLogo.png" class="logo">
+        <input type="text" class="form-control">
+        <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="shoppingCart.php"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+            <li><a href="loginHomeC.html">My Account</a></li>
+            <li><a href="logout.php">Log Out</a></li>
+        </ul>
+    </div>
+</div>
+<h3>Shopping cart</h3>
+<div class="container">
+    <i class="fa fa-fw fa-search"></i>
+    <input type="text" id="search" placeholder="Search.." style="margin: 10px; width: 70%;" >
+</div>
+<form id="viewOrderRecord" action="" method="post" class="dataGroup">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Price per unit</th>
+                    <th scope="col">Discount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><img src="Image/gamPlay3.jpg" width="100" height="100"></th>
+                    <td>Cup</td>
+                    <td>$100.0</td>
+                    <td>$0.0</td>
+                    <td><button type="button" class="btn btn-secondary" >Delete</button></td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="Image/bracelet.jpg" width="100" height="100"></th>
+                    <td>Bracelet</td>
+                    <td>$500.0</td>
+                    <td>$0.0</td>
+                    <td><button type="button" class="btn btn-secondary" >Delete</button></td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="Image/waterBottle.jpg" width="100" height="100"></th>
+                    <td>Water Bottle</td>
+                    <td>$120.0</td>
+                    <td>$0.0</td>
+                    <td><button type="button" class="btn btn-secondary" >Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <hr>
+        <label style="float: right;">Total price: $720.0</label>
+    </div>
+    <div class="container">
+    <button type="button" class="btn btn-secondary" style="float: left;">Checkout</button>
+    </div>
+
+
+</form>
+</body>
+</html>
